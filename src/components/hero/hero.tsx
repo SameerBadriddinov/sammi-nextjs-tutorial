@@ -32,14 +32,16 @@ const Hero = () => {
 								}}
 							/>
 							<Box
-								width={{ xs: '100%', sm: '70%' }}
+								width={{ xs: '100%', md: '70%' }}
 								position={'relative'}
 								color={'white'}
-								sx={{ top: '50%', transform: 'translateY(-50%)', paddingLeft: { xs: '10px', sm: '50px' } }}
+								sx={{ top: '50%', transform: 'translateY(-50%)', paddingLeft: { xs: '10px', md: '50px' } }}
 								zIndex={999}
 							>
-								<Typography variant='h2'>{item.title}</Typography>
-								<Typography variant='h5'>{item.exerpt}</Typography>
+								<Typography sx={{ fontSize: { xs: '30px', md: '50px' } }}>{item.title}</Typography>
+								<Typography color={'gray'} sx={{ fontSize: { xs: '20px', md: '25px' } }}>
+									{item.exerpt}
+								</Typography>
 								<Box sx={{ display: 'flex', gap: '10px', marginTop: '20px' }}>
 									<Avatar alt={item.author.name} src={item.author.image} />
 									<Box>

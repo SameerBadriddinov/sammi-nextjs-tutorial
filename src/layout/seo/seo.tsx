@@ -20,7 +20,7 @@ const SEO = ({
 				<meta name='keyword' content={metaKeywords} />
 				<meta name='author' content={author} />
 				<meta name='description' content={metaDescription} />
-				<link rel='shortcut icon' href={'/vercel.svg'} type='image/x-icon' />
+				<link rel='shortcut icon' href={'/favicon.svg'} type='image/x-icon' />
 			</Head>
 			{children}
 		</>

@@ -15,6 +15,7 @@ const Footer = () => {
 				backgroundColor: '#141414',
 				color: 'white',
 			}}
+			borderTop={'1px solid rgba(255, 255, 255, .5)'}
 		>
 			<Typography>© {format(new Date(), 'yyyy')} Sammi. All Right Reserved.</Typography>
 			<Box sx={{ display: 'flex', gap: '15px' }}>
